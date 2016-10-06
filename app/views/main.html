@@ -1,0 +1,16 @@
+<section id="editor1">
+  original (press Merge to merge || Discard to discard changes)
+  Two known bugs Enter in edit, and bold, italic and text because of the tag wrappers 
+  <textarea ui-tinymce="tinymceOptions1" ng-model="tinymceEditor1"></textarea>
+    <!--<button ng-click="getContent()">Get content</button>
+    <button ng-click="setContent()">Set content</button>-->
+</section>
+<section id="editor2">
+   edit (press Abort to abort)
+  <textarea ui-tinymce="tinymceOptions2" ng-model="tinymceEditor2"></textarea>
+    <!--<button ng-click="getContent()">Get content</button>
+    <button ng-click="setContent()">Set content</button>-->
+</section>
+<section id="diff01">
+  <div semantic-diff-custom left-obj="original" right-obj="tinymceEditor2" out-obj="tinymceEditor1" options="diffOptions"></div>
+</section>
